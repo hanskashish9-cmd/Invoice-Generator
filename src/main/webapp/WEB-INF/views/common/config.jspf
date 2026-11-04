@@ -1,0 +1,15 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+
+<%-- ===================================================================
+     CHANGE THE CURRENCY SYMBOL HERE (one place for the whole project)
+     Examples: "$"   "€"   "£"   "Rs. "
+     =================================================================== --%>
+<c:set var="currencySymbol" value="Rs. " />
+
+<%-- Same number format (1,234.50) on every page --%>
+<fmt:setLocale value="en_US" />
+
+<%-- Short name for the application's context path (e.g. /invoice-generator) --%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
